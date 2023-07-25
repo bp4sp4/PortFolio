@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹 퍼블리셔 - 박상훈</title>
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"></script>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="/css/fullpage.css">
+<script>
+$(document).ready(function() {
+	$('#fullpage').fullpage({
+		//options here
+		autoScrolling:true,
+		scrollHorizontally: true
+	});
+
+	//methods
+	$.fn.fullpage.setAllowScrolling(true);
+});
+</script>
+
+<body>
+    <div id="fullpage">
+        <div class="section" data-anchor="div1">
+            
+            <img class="logo" src="img/main.png" alt="메인">
+            <!--
+            <div class="animated-title">
+                <div class="track">
+                    <div class="content">&nbsp;Sang Hun Park PORTFOLIO&nbsp;&nbsp;Sang Hun Park PORTFOLIO&nbsp;Sang Hun Park PORTFOLIO&nbsp;Sang Hun Park PORTFOLIO&nbsp;Sang Hun Park PORTFOLIO</div>
+                </div>
+              </div>
+              -->
+              <div class="scroll-down">
+                <img src="img/arrow_1.png" alt="스크롤">
+              </div>
+        </div>
+        <div class="section" data-anchor="div2">
+          <div class="wrap">
+            <div class="about-myfaceimg"></div>
+            <div class="about-sklis"><p>안녕하세요! 배움에 겁이 없는<br>웹 개발자 박상훈입니다!</p>
+                <p><strong>좋아하는것</strong>이기에 재미있게<br> 항상 웹 퍼블리싱을 진행해왔습니다. 
+                <br><br>어디에서도 잘 보이는 <strong>반응형</strong><br> <strong>웹 접근성과 웹 표준을 고려한 웹 페이지</strong>를 그려냅니다.</p>
+                <p>항상 개발하면서 중요하게 생각하는 팀원간의 의사소통 <br>
+                <strong>불통이 아닌! </strong>소통을 중요시하는 개발자입니다.</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="section" data-anchor="div3">섹션3</div>
+        <div class="section" data-anchor="div4">섹션4</div>
+        <div class="section" data-anchor="div5">섹션5</div>
+    </div>
+
+
+    <script>
+
+    var myFullpage = new fullpage('#fullpage', {
+        anchors: ['div1', 'div2', 'div3', 'div4', 'div5'],
+        navigation:true,
+        navigationTooltips: ['Page 1', 'Page 2', 'Page 3', 'Page 4', 'Page 5'],
+        showActiveTooltip: true,
+        menu: '#menu',
+        scrollBar: true,
+        autoScrolling: true,
+        slidesNavigation: true,
+        responsiveHeight: 330,
+        scrollingSpeed: 700,
+        controlArrows: false
+    });
+
+    </script>
+</body>
+</html>
