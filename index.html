@@ -1,77 +1,146 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>웹 퍼블리셔 - 박상훈</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>웹 퍼블리셔 - 박상훈</title>
 </head>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="/css/fullpage.css">
 <script>
-$(document).ready(function() {
-	$('#fullpage').fullpage({
-		//options here
-		autoScrolling:true,
-		scrollHorizontally: true
-	});
+  $(document).ready(function () {
+    $('#fullpage').fullpage({
+      //options here
+      autoScrolling: true,
+      scrollHorizontally: true
+    });
 
-	//methods
-	$.fn.fullpage.setAllowScrolling(true);
-});
+    //methods
+    $.fn.fullpage.setAllowScrolling(true);
+  });
+</script>
+
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
 </script>
 
 <body>
-    <div id="fullpage">
-        <div class="section" data-anchor="div1">
-            
-            <img class="logo" src="img/main.png" alt="메인">
-            <!--
+  <div id="fullpage">
+    <div class="section" data-anchor="div1">
+
+      <img class="logo" src="img/main.png" alt="메인">
+      <!--
             <div class="animated-title">
                 <div class="track">
                     <div class="content">&nbsp;Sang Hun Park PORTFOLIO&nbsp;&nbsp;Sang Hun Park PORTFOLIO&nbsp;Sang Hun Park PORTFOLIO&nbsp;Sang Hun Park PORTFOLIO&nbsp;Sang Hun Park PORTFOLIO</div>
                 </div>
               </div>
               -->
-              <div class="scroll-down">
-                <img src="img/arrow_1.png" alt="스크롤">
-              </div>
+      <div class="scroll-down">
+        <img src="img/arrow_1.png" alt="스크롤">
+      </div>
+    </div>
+    <div class="section" data-anchor="div2">
+      <div class="wrap">
+        <div class="about-myfaceimg"><img class="myimg" src="img/myimg.jpeg" c></div>
+
+        <div class="about-sklis">
+          <p class="hashtag"> #끊임없는!&nbsp;#노력하는!&nbsp;#배움에끝은없다!</p>
+          <p>안녕하세요! 배움에 겁이 없는<br>웹 개발자 박상훈입니다!</p>
+          <p><strong>좋아하는것</strong>이기에 재미있게<br> 항상 웹 개발을 진행해왔습니다.
+            <br><br>어디에서도 잘 보이는 <strong>반응형</strong><br> <strong>웹 접근성과 웹 표준을 고려한 웹 페이지</strong>를 그려냅니다.
+          </p>
+          <p>항상 개발하면서 중요하게 생각하는 팀원간의 의사소통 <br>
+            <strong>불통이 아닌! </strong>소통을 중요시하는 개발자입니다.
+          </p>
+          22.02 | 대림대학교 컴퓨터정보학부 졸업 <br>
+          22.04 | 와이즈스톤티 앱,웹 QA테스터 근무 (21.10 ~ 22.04)<br>
+          <span class="tmi">22.05 | 한국 ICT인재개발원 (22.05 ~ 22.12) </span><br>
+          23.02 | 새롬정보시스템 AI빅데이터그룹파트원 (23.02 ~ 23.05) <br>
+          Tools : HTMl5, CSS, JQuery, JavaScript 더적기
         </div>
-        <div class="section" data-anchor="div2">
-          <div class="wrap">
-            <div class="about-myfaceimg"></div>
-            <div class="about-sklis"><p>안녕하세요! 배움에 겁이 없는<br>웹 개발자 박상훈입니다!</p>
-                <p><strong>좋아하는것</strong>이기에 재미있게<br> 항상 웹 퍼블리싱을 진행해왔습니다. 
-                <br><br>어디에서도 잘 보이는 <strong>반응형</strong><br> <strong>웹 접근성과 웹 표준을 고려한 웹 페이지</strong>를 그려냅니다.</p>
-                <p>항상 개발하면서 중요하게 생각하는 팀원간의 의사소통 <br>
-                <strong>불통이 아닌! </strong>소통을 중요시하는 개발자입니다.</p>
+      </div>
+    </div>
+    <div class="section" data-anchor="div3">
+      <div>
+        <h1>PORTFOLIO</h1>
+        <div class="swiper-container mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+            33  
+            </div>
+            <div class="swiper-slide">
+            22
+            </div>
+            <div class="swiper-slide">
+            11
             </div>
           </div>
-
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
         </div>
-        <div class="section" data-anchor="div3">섹션3</div>
-        <div class="section" data-anchor="div4">섹션4</div>
-        <div class="section" data-anchor="div5">섹션5</div>
+      </div>
     </div>
+    <div class="section" data-anchor="div4">섹션4</div>
+    <div class="section" data-anchor="div5">섹션5</div>
+  </div>
 
-
-    <script>
-
-    var myFullpage = new fullpage('#fullpage', {
-        anchors: ['div1', 'div2', 'div3', 'div4', 'div5'],
-        navigation:true,
-        navigationTooltips: ['Page 1', 'Page 2', 'Page 3', 'Page 4', 'Page 5'],
-        showActiveTooltip: true,
-        menu: '#menu',
-        scrollBar: true,
-        autoScrolling: true,
-        slidesNavigation: true,
-        responsiveHeight: 330,
-        scrollingSpeed: 700,
-        controlArrows: false
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
     });
 
-    </script>
+  </script>
+  <script>
+    var myFullpage = new fullpage('#fullpage', {
+      anchors: ['div1', 'div2', 'div3', 'div4', 'div5'],
+      navigation: true,
+      navigationTooltips: ['Page 1', 'Page 2', 'Page 3', 'Page 4', 'Page 5'],
+      showActiveTooltip: true,
+      menu: '#menu',
+      scrollBar: true,
+      autoScrolling: true,
+      slidesNavigation: true,
+      responsiveHeight: 330,
+      scrollingSpeed: 700,
+      controlArrows: false
+    });
+  </script>
 </body>
+
 </html>
