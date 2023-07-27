@@ -82,25 +82,53 @@
       </div>
     </div>
     <div class="section" data-anchor="div3">
-      <div>
-        <h1>PORTFOLIO</h1>
-        <div class="swiper-container mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-            33  
+      <div class="swiper-container mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="port-content">
+              <Strong class="port-title">TestWorld</Strong>
+              <div class="port-lorem">
+              <p>연령대별 인기테스트페이지를 연결시켜드립니다.</p>
+              <p>작업기간 : 1달</p>
+              <p>사용한툴 : VSCode, Photoshop</p>
+              <p>언어 : PHP, HTMl, CSS, JavaScript</p>
             </div>
-            <div class="swiper-slide">
-            22
             </div>
-            <div class="swiper-slide">
-            11
+              <div class="port-img">작업물 사진</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="port-img2">작업물 사진</div>
+            <div class="port-content2">
+              <Strong class="port-title">Gammi</Strong>
+              <div class="port-lorem2">
+              <p>음식랭킹을 만들어 메인에 1위부터7위까지 레시피를 제공해주는 사이트입니다.</p>
+              <p>작업기간 : 1달</p>
+              <p>사용한툴 : VSCode, Photoshop</p>
+              <p>언어 : PHP, HTMl, CSS, JavaScript</p>
+            </div>
             </div>
           </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-pagination"></div>
+          <div class="swiper-slide">
+            <div class="port-content">
+              <Strong class="port-title">TestWorld</Strong>
+              <div class="port-lorem">
+              <p>연령대별 인기테스트페이지를 연결시켜드립니다.</p>
+              <p>작업기간 : 1달</p>
+              <p>사용한툴 : VSCode, Photoshop</p>
+              <p>언어 : PHP, HTMl, CSS, JavaScript</p>
+            </div>
+            </div>
+              <div class="port-img">작업물 사진</div>
+          </div>
+          <div class="swiper-slide">
+
+          </div>
         </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
       </div>
+
     </div>
     <div class="section" data-anchor="div4">섹션4</div>
     <div class="section" data-anchor="div5">섹션5</div>
@@ -112,7 +140,7 @@
       spaceBetween: 30,
       centeredSlides: true,
       autoplay: {
-        delay: 2500,
+        delay: 10000,
         disableOnInteraction: false,
       },
       pagination: {
@@ -123,8 +151,14 @@
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
+      
     });
-
+    let projectImg = $('.project1').height();
+  $('.project-shadow').css("height", projectImg);
+  $(window).resize(function(){
+    let projectImg = $('.project1').height();
+    $('.project-shadow').css("height", projectImg);
+  });
   </script>
   <script>
     var myFullpage = new fullpage('#fullpage', {
