@@ -8,54 +8,19 @@
 </head>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"></script>
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<script src="js/fullpage-function.js"></script>
 <link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="/css/fullpage.css">
-<script>
-  $(document).ready(function () {
-    $('#fullpage').fullpage({
-      //options here
-      autoScrolling: true,
-      scrollHorizontally: true
-    });
-
-    //methods
-    $.fn.fullpage.setAllowScrolling(true);
-  });
-</script>
-
-<script>
-  var swiper = new Swiper(".mySwiper", {
-    spaceBetween: 30,
-    centeredSlides: true,
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
-
-</script>
+<link rel="stylesheet" href="css/fullpage.css">
 
 <body>
   <div id="fullpage">
     <div class="section" data-anchor="div1">
-
+      <div id="information">
+        <span class="information-wrap left">SangHun's Web Portfolio</span>
+        <span class="information-wrap center">bp4sp4@naver.com</span>
+        <span class="information-wrap right">Active</span>
+      </div>
       <img class="logo" src="img/main.png" alt="메인">
-      <!--
-            <div class="animated-title">
-                <div class="track">
-                    <div class="content">&nbsp;Sang Hun Park PORTFOLIO&nbsp;&nbsp;Sang Hun Park PORTFOLIO&nbsp;Sang Hun Park PORTFOLIO&nbsp;Sang Hun Park PORTFOLIO&nbsp;Sang Hun Park PORTFOLIO</div>
-                </div>
-              </div>
-              -->
       <div class="scroll-down">
         <img src="img/arrow_1.png" alt="스크롤">
       </div>
@@ -63,7 +28,6 @@
     <div class="section" data-anchor="div2">
       <div class="wrap">
         <div class="about-myfaceimg"><img class="myimg" src="img/myimg.jpeg" c></div>
-
         <div class="about-sklis">
           <p class="hashtag"> #끊임없는!&nbsp;#노력하는!&nbsp;#배움에끝은없다!</p>
           <p>안녕하세요! 배움에 겁이 없는<br>웹 개발자 박상훈입니다!</p>
@@ -82,112 +46,41 @@
       </div>
     </div>
     <div class="section" data-anchor="div3">
-      <div class="swiper-container mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="port-content">
-              <Strong class="port-title">TestWorld</Strong>
-              <div class="port-lorem">
-              <p>연령대별 인기테스트페이지를 연결시켜드립니다.</p>
-              <p>작업기간 : 1달</p>
-              <p>사용한툴 : VSCode, Photoshop</p>
-              <p>언어 : PHP, HTMl, CSS, JavaScript</p>
-            </div>
-            </div>
-            <div class="port-item">
-            <a class="readmorebtn">Read More+</a>
-              <div class="port-img">작업물 메인사진</div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="port-img2">작업물 메인사진</div>
-            <div class="port-content2">
-              <Strong class="port-title">Gammi</Strong>
-              <div class="port-lorem2">
-              <p>음식랭킹을 만들어 메인에 1위부터7위까지 레시피를 제공해주는 사이트입니다.</p>
-              <p>작업기간 : 1달</p>
-              <p>사용한툴 : VSCode, Photoshop</p>
-              <p>언어 : PHP, HTMl, CSS, JavaScript</p>
-            </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="port-content">
-              <Strong class="port-title">TestWorld</Strong>
-              <div class="port-lorem">
-              <p>연령대별 인기테스트페이지를 연결시켜드립니다.</p>
-              <p>작업기간 : 1달</p>
-              <p>사용한툴 : VSCode, Photoshop</p>
-              <p>언어 : PHP, HTMl, CSS, JavaScript</p>
-            </div>
-            </div>
-              <div class="port-img">작업물 메인사진</div>
-          </div>
-          <div class="swiper-slide">
-            <div class="port-img2">작업물 메인사진</div>
-            <div class="port-content2">
-              <Strong class="port-title">PORTFOLIO</Strong>
-              <div class="port-lorem2">
-              <p>포트폴리오 사이트</p>
-              <p>작업기간 : 1달</p>
-              <p>사용한툴 : VSCode, Photoshop</p>
-              <p>언어 : PHP, HTMl, CSS, JavaScript</p>
-            </div>
-            </div>
-          </div>
-          </div>
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
+      <div class="wrap">
+        <p class="hashtag">웨딩러리</p>
       </div>
-
     </div>
-    <div class="section" data-anchor="div4">섹션4</div>
-    <div class="section" data-anchor="div5">섹션5</div>
-  </div>
+    <div class="section" data-anchor="div4">
+      <div class="swiper-slide">
+        <iframe src="https://bp4sp4.github.io/WeddingVideoPage/" frameborder="0"></iframe>
+      </div>
+    </div>
 
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      spaceBetween: 30,
-      centeredSlides: true,
-      autoplay: {
-        delay: 10000,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      
-    });
-    let projectImg = $('.project1').height();
-  $('.project-shadow').css("height", projectImg);
-  $(window).resize(function(){
-    let projectImg = $('.project1').height();
-    $('.project-shadow').css("height", projectImg);
-  });
-  </script>
-  <script>
-    var myFullpage = new fullpage('#fullpage', {
-      anchors: ['div1', 'div2', 'div3', 'div4', 'div5'],
-      navigation: true,
-      navigationTooltips: ['Page 1', 'Page 2', 'Page 3', 'Page 4', 'Page 5'],
-      showActiveTooltip: true,
-      menu: '#menu',
-      scrollBar: true,
-      autoScrolling: true,
-      slidesNavigation: true,
-      responsiveHeight: 330,
-      scrollingSpeed: 700,
-      controlArrows: false
-    });
-  </script>
+    <div class="section" data-anchor="div5">
+      <div class="wrap">
+        무비플라자
+      </div>
+    </div>
+    <div class="section" data-anchor="div6">
+      <div class="wrap">
+        w.fast
+      </div>
+    </div>
+  </div>
 </body>
+<script>
+  var myFullpage = new fullpage("#fullpage", {
+    anchors: ["div1", "div2", "div3", "div4", "div5", "div6"],
+    navigation: true,
+    showActiveTooltip: true,
+    menu: "#menu",
+    scrollBar: true,
+    autoScrolling: true,
+    slidesNavigation: true,
+    responsiveHeight: 330,
+    scrollingSpeed: 700,
+    controlArrows: false,
+  });
+</script>
 
 </html>
