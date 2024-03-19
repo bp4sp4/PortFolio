@@ -1,14 +1,28 @@
-iframe {
-    width: 100%;
-    height: 100%;
+a {
+    text-decoration: none;
 }
 
-/* 각 섹션에 배경색 설정 */
+a:visited {
+    color: #000
+}
+
+a:link {
+    color: #000;
+}
+
 .section:nth-child(1) {
     background-color: #000;
 }
 
-.logo {
+#logo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-img {
     height: auto;
     padding: 250px;
     display: flex;
@@ -20,18 +34,18 @@ iframe {
     width: 90%;
     left: 5%;
     top: 1rem;
-    padding: 15px;
+    padding: 5px;
     display: flex;
     justify-content: center;
-    border-top: 4px solid #ffffff;
-    border-bottom: 2px solid #ffffff;
+
+    z-index: 9999;
 }
 
 .information-wrap {
     color: #ffffff;
     padding: 10px;
-    font-size: 24px;
-    font-weight: 700;
+    font-size: 20px;
+
 }
 
 #information .left {
@@ -56,17 +70,11 @@ iframe {
     height: 10px;
     position: absolute;
     left: -10px;
-    bottom: 16px;
+    bottom: 20px;
     color: rgb(173, 255, 148);
     background-color: rgb(173, 255, 148);
 }
 
-.information-wrap {
-    color: #ffffff;
-    padding: 10px;
-    font-size: 20px;
-    font-weight: 700;
-}
 
 .scroll-down {
     position: absolute;
@@ -177,7 +185,6 @@ body {
 }
 
 .port-img2 {
-
     width: 500px;
     height: 300px;
     border: solid;
@@ -200,20 +207,6 @@ body {
     cursor: pointer;
 }
 
-.readmorebtn {
-    display: none;
-    position: absolute;
-    bottom: 130px;
-    /* 조정해서 적절한 위치로 버튼을 배치하세요 */
-    right: 180px;
-    /* 조정해서 적절한 위치로 버튼을 배치하세요 */
-    background-color: #007bff;
-    color: #ffffff;
-    padding: 10px 30px;
-    border-radius: 5px;
-    text-decoration: none;
-}
-
 .port-item:hover .readmorebtn {
     display: block;
     /* 마우스 호버시 버튼을 보이게 합니다 */
@@ -228,4 +221,79 @@ body {
 .section:nth-child(5) {
     background-color: #FF00FF;
     /* 보라색 배경 */
+}
+
+#wedding {
+    display: flex;
+    gap: 7rem;
+    width: 100%;
+    justify-content: center;
+}
+
+#wedding-img-info {
+    width: 50rem;
+    border: 1px solid #d5d5d5;
+    border-radius: 20px;
+
+}
+
+#wedding .weddinglery-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+#wedding .weddinglery-wrap .workdetail {
+    opacity: 1;
+    color: #d2d2d2;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1rem;
+}
+
+#wedding .weddinglery-wrap .workname {
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 0;
+}
+
+.work-lang {
+    display: inline-block;
+    margin: 1rem 0 1rem;
+}
+
+.work-lang-name {
+    color: #d0d0d0;
+    font-size: 1.5rem;
+    font-weight: 400;
+
+}
+
+#work-lang-before::before {
+    background-color: #d0d0d0;
+    content: "";
+    display: inline-block;
+    height: 15px;
+    margin-right: 10px;
+    transform: skew(-15deg, -15deg);
+    vertical-align: middle;
+    width: 1px;
+}
+
+.work-detail {
+    word-wrap: break-word;
+    color: #4e4e4e;
+    font-family: Pretendard, -apple-system, Apple SD Gothic Neo, 맑은 고딕, Malgun Gothic, sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 180%;
+    word-break: keep-all;
+}
+
+.work-link {
+    cursor: pointer;
+}
+
+.work-link .icons {
+    margin-right: 10px;
 }
