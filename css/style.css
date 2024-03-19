@@ -1,3 +1,8 @@
+* {
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
 a {
     text-decoration: none;
 }
@@ -99,7 +104,6 @@ a:link {
 
 .section:nth-child(2) {
     background-color: #fbffc5;
-    /* 초록색 배경 */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -150,7 +154,6 @@ a:link {
 
 .section:nth-child(3) {
     background-color: #ffffff;
-    /* 파란색 배경 */
 }
 
 html,
@@ -209,41 +212,83 @@ body {
 
 .port-item:hover .readmorebtn {
     display: block;
-    /* 마우스 호버시 버튼을 보이게 합니다 */
 }
 
 
 .section:nth-child(4) {
     background-color: #FFFF00;
-    /* 노란색 배경 */
 }
 
 .section:nth-child(5) {
     background-color: #FF00FF;
-    /* 보라색 배경 */
 }
 
-#wedding {
+#work {
     display: flex;
     gap: 7rem;
     width: 100%;
     justify-content: center;
 }
 
-#wedding-img-info {
-    width: 50rem;
-    border: 1px solid #d5d5d5;
-    border-radius: 20px;
-
+#work .wrap-work-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#wedding .weddinglery-wrap {
+.reveal {
+    position: relative;
+    transform: translateY(-150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.reveal2 {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1.5s all ease;
+}
+
+.reveal2.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.reveal3 {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 3s all ease;
+}
+
+.reveal3.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+
+.work-img {
+    border: 1px solid #999;
+    border-radius: 30px;
+    height: 25rem;
+    object-fit: cover;
+    width: 100%;
+}
+
+#work .work-wrap {
     display: flex;
     flex-direction: column;
-    justify-content: left;
+    justify-content: center;
 }
 
-#wedding .weddinglery-wrap .workdetail {
+#work .work-wrap .workdetail {
     opacity: 1;
     color: #d2d2d2;
     font-size: 1.5rem;
@@ -251,7 +296,8 @@ body {
     line-height: 1rem;
 }
 
-#wedding .weddinglery-wrap .workname {
+
+#work .work-wrap .workname {
     font-size: 5rem;
     font-weight: 700;
     line-height: 0;
@@ -283,7 +329,7 @@ body {
 .work-detail {
     word-wrap: break-word;
     color: #4e4e4e;
-    font-family: Pretendard, -apple-system, Apple SD Gothic Neo, 맑은 고딕, Malgun Gothic, sans-serif;
+
     font-size: 1rem;
     font-weight: 300;
     line-height: 180%;
