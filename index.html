@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>웹 퍼블리셔 - 박상훈</title>
 </head>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -19,6 +19,7 @@
         <span class="information-wrap left">SangHun's Web Portfolio</span>
         <span class="information-wrap center">bp4sp4@naver.com</span>
         <span class="information-wrap right">Active</span>
+        <span class="mobileNotification">SangHun's Web Portfolio</span>
       </div>
       <div id="logo">
         <img class="logo-img" src="images/main.png" alt="main">
@@ -29,23 +30,24 @@
     </div>
     <div class="section">
       <div class="wrap">
-        <div class="about-myfaceimg">
+        <div class="about-myfaceimg reveal">
           <img class="myimg" src="images/myimg.jpeg">
         </div>
         <div class="about-sklis">
-          <p class="hashtag"> #끊임없는!&nbsp;#노력하는!&nbsp;#배움에끝은없다!</p>
-          <p>안녕하세요! 배움에 겁이 없는<br>웹 개발자 박상훈입니다!</p>
-          <p><strong>좋아하는것</strong>이기에 재미있게<br> 항상 웹 개발을 진행해왔습니다.
-            <br><br>어디에서도 <strong> 잘 보이는 반응형</strong><br> <strong>웹 접근성과 웹 표준을 고려한 웹 페이지</strong>를 그려냅니다.
-          </p>
-          <p>항상 개발하면서 중요하게 생각하는 팀원간의 의사소통 <br>
-            <strong>불통이 아닌! </strong>소통을 중요시하는 개발자입니다.
-          </p>
-          22.02 | 대림대학교 컴퓨터정보학부 졸업 <br>
-          22.04 | 와이즈스톤티 앱,웹 QA테스터 근무 (21.10 ~ 22.04)<br>
-          <span class="tmi">22.05 | 한국 ICT인재개발원 (22.05 ~ 22.12) </span><br>
-          23.02 | 새롬정보시스템 AI빅데이터그룹파트원 (23.02 ~ 23.05) <br>
-
+          <p class="hashtag reveal2"> #끊임없는!&nbsp;#노력하는!&nbsp;#배움에끝은없다!</p>
+          <div class="reveal2">
+            <p class="ab-p">안녕하세요! 배움에 겁이 없는<br>웹 개발자 박상훈입니다!</p>
+            <p class="ab-p"><strong>좋아하는것</strong>이기에 재미있게<br> 항상 웹 개발을 진행해왔습니다.
+              <br><br>어디에서도 <strong> 잘 보이는 반응형</strong><br> <strong>웹 접근성과 웹 표준을 고려한 웹 페이지</strong>를 그려냅니다.
+            </p>
+            <p class="ab-p">항상 개발하면서 중요하게 생각하는 팀원간의 의사소통 <br>
+              <strong>불통이 아닌! </strong>소통을 중요시하는 개발자입니다.
+            </p>
+            <p class="ab-company">22.02 | 대림대학교 컴퓨터정보학부 졸업 </p>
+            <p class="ab-company">22.04 | 와이즈스톤티 앱,웹 QA테스터 근무 (21.10 ~ 22.04)</p>
+            <p class="ab-company"><span class="tmi">22.05 | 한국 ICT인재개발원 (22.05 ~ 22.12) </span></p>
+            <p class="ab-company">23.02 | 새롬정보시스템 AI빅데이터그룹파트원 (23.02 ~ 23.05)</p>
+          </div>
         </div>
       </div>
     </div>
@@ -271,61 +273,8 @@
         </div>
       </div>
     </div>
-
-
 </body>
 <script src="https://kit.fontawesome.com/f15b369f5f.js" crossorigin="anonymous"></script>
-<script>
-  var myFullpage = new fullpage("#fullpage", {
-    anchors: ["div1", "div2", "div3", "div4", "div5", "div6"],
-    navigation: true,
-    showActiveTooltip: true,
-    menu: "#menu",
-    scrollBar: true,
-    autoScrolling: true,
-    slidesNavigation: true,
-    responsiveHeight: 330,
-    scrollingSpeed: 700,
-    controlArrows: false,
-    afterLoad: function (origin, destination, direction) {
-      if (destination.index > 0) {
-        $("#information").find(".information-wrap").css("color", "#000000");
-        $("#information").css("border-top", "2.5px solid #000000");
-        $("#information").css("border-bottom", "1px solid #000000");
-      } else {
-        $("#information").find(".information-wrap").css("color", "#ffffff");
-        $("#information").css("border-top", "2.5px solid #ffffff");
-        $("#information").css("border-bottom", "1px solid #ffffff");
-      }
-    }
-  });
-
-  function reveal() {
-    var groups = [
-      document.querySelectorAll(".reveal"),
-      document.querySelectorAll(".reveal2"),
-      document.querySelectorAll(".reveal3")
-    ];
-
-    groups.forEach(function (group) {
-      for (var i = 0; i < group.length; i++) {
-        var windowHeight = window.innerHeight;
-        var elementTop = group[i].getBoundingClientRect().top;
-        var elementVisible = 150;
-
-        if (elementTop < windowHeight - elementVisible) {
-          group[i].classList.add("active");
-        } else {
-          group[i].classList.remove("active");
-        }
-      }
-    });
-  }
-
-  // 스크롤 이벤트에 대한 리스너 등록
-  window.addEventListener("scroll", reveal);
-
-
-</script>
+<script src="js/fullpagefunc.js"></script>
 
 </html>
