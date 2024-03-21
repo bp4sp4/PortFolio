@@ -225,6 +225,416 @@ a:link {
 
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+    #logo {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo-img {
+        height: auto;
+        padding: 250px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+
+    #information {
+        position: fixed;
+        width: 90%;
+        left: 5%;
+        top: 1rem;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        z-index: 9999;
+    }
+
+
+    .information-wrap {
+        color: #ffffff;
+        padding: 10px;
+        font-size: 20px;
+
+    }
+
+    #information .left {
+        position: absolute;
+        left: 0;
+    }
+
+    #information .center {
+        position: static;
+    }
+
+    #information .right {
+        position: absolute;
+        right: 0;
+    }
+
+    #information .right::before {
+        content: "";
+        display: block;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        left: -10px;
+        bottom: 20px;
+        color: rgb(173, 255, 148);
+        background-color: rgb(173, 255, 148);
+    }
+
+    .scroll-down {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        bottom: 50px;
+        z-index: 900;
+        animation: scroll_down 0.5s linear alternate infinite;
+    }
+
+    .wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .about-myfaceimg {
+        width: 600px;
+        height: 600px;
+        border-radius: 15%;
+        overflow: hidden;
+        border: none;
+    }
+
+    .about-myfaceimg .myimg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+    }
+
+    .about-sklis {
+        font-size: 25px;
+        margin-left: 200px;
+        font-family: 'JalnanGothic';
+    }
+
+    .about-sklis .hashtag {
+        font-size: 30px;
+        color: #fe8c13;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+
+    .ab-p {
+        color: #525252;
+    }
+
+    .ab-company {
+        color: #525252;
+        font-family: 'Noto Sans KR', sans-serif;
+        line-height: 0;
+    }
+
+    #work {
+        display: flex;
+        gap: 7rem;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .work-img {
+        border: 1px solid #999;
+        border-radius: 30px;
+        height: 25rem;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    #work .work-wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #work .work-wrap .workdetail {
+        opacity: 1;
+        color: #d2d2d2;
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 1rem;
+    }
+
+
+    #work .work-wrap .workname {
+        font-size: 5rem;
+        font-weight: 800;
+        line-height: 0;
+    }
+
+    .work-lang {
+        display: inline-block;
+        margin: 1rem 0 1rem;
+    }
+
+    .work-lang-name {
+        color: #d0d0d0;
+        font-size: 1.5rem;
+        font-weight: 400;
+
+    }
+
+    #work-lang-before::before {
+        background-color: #d0d0d0;
+        content: "";
+        display: inline-block;
+        height: 15px;
+        margin-right: 10px;
+        transform: skew(-15deg, -15deg);
+        vertical-align: middle;
+        width: 1px;
+    }
+
+    .work-detail {
+        word-wrap: break-word;
+        color: #4e4e4e;
+
+        font-size: 1rem;
+        font-weight: 300;
+        line-height: 180%;
+        word-break: keep-all;
+    }
+
+    .work-link {
+        cursor: pointer;
+    }
+
+    .work-link .icons {
+        margin-right: 10px;
+    }
+
+    #work .wrap-work-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .work-detail-wrap {
+        width: 500px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    #logo {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo-img {
+        height: auto;
+        padding: 250px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+
+    #information {
+        position: fixed;
+        width: 90%;
+        left: 5%;
+        top: 1rem;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        z-index: 9999;
+    }
+
+
+    .information-wrap {
+        color: #ffffff;
+        padding: 10px;
+        font-size: 20px;
+
+    }
+
+    #information .left {
+        position: absolute;
+        left: 0;
+    }
+
+    #information .center {
+        position: static;
+    }
+
+    #information .right {
+        position: absolute;
+        right: 0;
+    }
+
+    #information .right::before {
+        content: "";
+        display: block;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        left: -10px;
+        bottom: 20px;
+        color: rgb(173, 255, 148);
+        background-color: rgb(173, 255, 148);
+    }
+
+    .scroll-down {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        bottom: 50px;
+        z-index: 900;
+        animation: scroll_down 0.5s linear alternate infinite;
+    }
+
+    .wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .about-myfaceimg {
+        width: 600px;
+        height: 600px;
+        border-radius: 15%;
+        overflow: hidden;
+        border: none;
+    }
+
+    .about-myfaceimg .myimg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+    }
+
+    .about-sklis {
+        font-size: 25px;
+        margin-left: 200px;
+        font-family: 'JalnanGothic';
+    }
+
+    .about-sklis .hashtag {
+        font-size: 30px;
+        color: #fe8c13;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+
+    .ab-p {
+        color: #525252;
+    }
+
+    .ab-company {
+        color: #525252;
+        font-family: 'Noto Sans KR', sans-serif;
+        line-height: 0;
+    }
+
+    #work {
+        display: flex;
+        gap: 7rem;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .work-img {
+        border: 1px solid #999;
+        border-radius: 30px;
+        height: 25rem;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    #work .work-wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #work .work-wrap .workdetail {
+        opacity: 1;
+        color: #d2d2d2;
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 1rem;
+    }
+
+
+    #work .work-wrap .workname {
+        font-size: 5rem;
+        font-weight: 800;
+        line-height: 0;
+    }
+
+    .work-lang {
+        display: inline-block;
+        margin: 1rem 0 1rem;
+    }
+
+    .work-lang-name {
+        color: #d0d0d0;
+        font-size: 1.5rem;
+        font-weight: 400;
+
+    }
+
+    #work-lang-before::before {
+        background-color: #d0d0d0;
+        content: "";
+        display: inline-block;
+        height: 15px;
+        margin-right: 10px;
+        transform: skew(-15deg, -15deg);
+        vertical-align: middle;
+        width: 1px;
+    }
+
+    .work-detail {
+        word-wrap: break-word;
+        color: #4e4e4e;
+
+        font-size: 1rem;
+        font-weight: 300;
+        line-height: 180%;
+        word-break: keep-all;
+    }
+
+    .work-link {
+        cursor: pointer;
+    }
+
+    .work-link .icons {
+        margin-right: 10px;
+    }
+
+    #work .wrap-work-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .work-detail-wrap {
+        width: 500px;
+    }
+}
+
 /* 컴퓨터  */
 @media (min-width: 1200px) {
     #logo {
