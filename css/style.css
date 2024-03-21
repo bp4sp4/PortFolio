@@ -78,7 +78,7 @@ a:link {
         position: absolute;
         width: 100%;
         text-align: center;
-        bottom: 550px;
+        bottom: 50px;
         z-index: 900;
         animation: scroll_down 0.5s linear alternate infinite;
     }
@@ -88,7 +88,7 @@ a:link {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        height: 100vh;
+        height: 100%;
     }
 
     .about-myfaceimg {
@@ -114,7 +114,8 @@ a:link {
     }
 
     .about-sklis .hashtag {
-        font-size: 1.4em;
+        font-size: 1.2em;
+        text-align: center;
         color: #fe8c13;
         font-family: 'JalnanGothic';
 
@@ -122,6 +123,11 @@ a:link {
 
     .ab-p {
         color: #525252;
+    }
+
+    .ab-company {
+        line-height: 0;
+        padding: 4px 0;
     }
 
     .wrap-po {
