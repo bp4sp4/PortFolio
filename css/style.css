@@ -123,12 +123,14 @@ a:link {
 
     .ab-p {
         color: #525252;
+        font-size: 12px;
     }
 
     .ab-company {
         line-height: 0;
         padding: 4px 0;
         word-break: keep-all;
+        font-size: 12px;
     }
 
     .wrap-po {
