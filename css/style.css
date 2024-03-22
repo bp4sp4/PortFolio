@@ -8,7 +8,6 @@
 }
 
 
-
 * {
     box-sizing: border-box;
     font-family: 'Noto Sans KR', sans-serif;
@@ -575,4 +574,79 @@ body {
 .reveal3.active {
     transform: translateY(0);
     opacity: 1;
+}
+
+
+
+.footer-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    line-height: 30px;
+}
+
+.footer-wrap .footer-lorem {
+    font-size: 4rem;
+    font-weight: 600;
+    display: inline;
+    box-shadow: inset 0 -116px 0 #fe8c13;
+    color: #ffffff;
+
+}
+
+.footer-wrap .footer-lorem-wrap {
+    line-height: 0;
+    position: relative;
+}
+
+.footer-wrap .footer-lorem2 {
+    position: absolute;
+    bottom: 50px;
+    left: 9px;
+    font-size: 2rem;
+    line-height: 0;
+}
+
+.footer-wrap .footer-email {
+    font-size: 8rem;
+    font-weight: 600;
+
+}
+
+.footer-wrap .footer-lorem3 {
+    font-size: 2rem;
+    position: absolute;
+    top: 90px;
+    left: 9px;
+    font-size: 2rem;
+    line-height: 0;
+}
+
+.footer-lorem3 .footer-link {
+    position: relative;
+    margin-left: 290px;
+}
+
+.footer-lorem3 .footer-link::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    /* 텍스트 아래에 밑줄 생성 */
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #000;
+    transition: width 0.3s ease;
+}
+
+.footer-lorem3 .footer-link:hover::after {
+    width: 100%;
+}
+
+
+#arrow {
+    position: absolute;
+    top: 10px;
+    right: 155px;
 }
