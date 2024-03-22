@@ -164,12 +164,12 @@ a:link {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 0 50px;
+        padding: 0 40px;
     }
 
     #work .work-wrap .workdetail {
         opacity: 1;
-        color: #eaeaea;
+        color: #d2d2d2;
         font-size: 0.9rem;
         font-weight: 400;
         line-height: 1rem;
@@ -177,7 +177,7 @@ a:link {
 
 
     #work .work-wrap .workname {
-        font-size: 2.45rem;
+        font-size: 2.4rem;
         font-weight: 800;
         line-height: 0;
         word-break: keep-all;
@@ -189,14 +189,14 @@ a:link {
     }
 
     .work-lang-name {
-        color: #eaeaea;
+        color: #d2d2d2;
         font-size: 0.8rem;
         font-weight: 400;
 
     }
 
     #work-lang-before::before {
-        background-color: #eaeaea;
+        background-color: #d2d2d2;
         content: "";
         display: inline-block;
         height: 15px;
@@ -370,7 +370,7 @@ a:link {
 
     #work .work-wrap .workdetail {
         opacity: 1;
-        color: #eaeaea;
+        color: #d2d2d2;
         font-size: 1.5rem;
         font-weight: 400;
         line-height: 1rem;
@@ -389,14 +389,14 @@ a:link {
     }
 
     .work-lang-name {
-        color: #eaeaea;
+        color: #d2d2d2;
         font-size: 1.5rem;
         font-weight: 400;
 
     }
 
     #work-lang-before::before {
-        background-color: #d0d0d0;
+        background-color: #d2d2d2;
         content: "";
         display: inline-block;
         height: 15px;
@@ -408,8 +408,7 @@ a:link {
 
     .work-detail {
         word-wrap: break-word;
-        color: #4e4e4e;
-
+        color: #d2d2d2;
         font-size: 1rem;
         font-weight: 500;
         line-height: 180%;
