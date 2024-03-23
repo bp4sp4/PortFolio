@@ -52,9 +52,9 @@ a:link {
         display: flex;
         justify-content: center;
         align-items: center;
-
         height: 100vh;
     }
+
 
     .mobileNotification {
         display: block;
@@ -87,7 +87,7 @@ a:link {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        height: 100%;
+        height: 100vh;
     }
 
     .about-myfaceimg {
@@ -224,11 +224,490 @@ a:link {
         margin-right: 10px;
     }
 
+    .footer-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        text-align: left;
+        margin: 0 auto;
+        max-width: 900px;
+        height: 100vh;
+        padding: 20px;
+    }
+
+    .footer-cont {
+        display: inline;
+        box-shadow: inset 0 -100px 0 #fe8c13;
+        font-size: 2rem;
+        color: #fff;
+        font-weight: 600;
+    }
+
+    .footer-lorem {
+        font-size: 1rem;
+    }
+
+    .footer-email {
+        font-size: 2.5rem;
+        line-height: 0;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .footer-link {
+        font-size: 1.5rem;
+        position: relative;
+        margin-left: 30px;
+        display: inline-block;
+    }
+
+    .footer-link>svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .footer-link::after {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        background-color: #000;
+        transition: width 0.3s ease, left 0.3s ease;
+    }
+
+    .footer-link:hover::after {
+        width: 100%;
+        left: 0;
+        /* 링크 텍스트 왼쪽 정렬 */
+    }
+
+    #arrow {
+        position: absolute;
+        top: 9px;
+        left: -30px;
+    }
+
 }
 
-@media (min-width: 768px) and (max-width: 991px) {}
+@media (min-width: 768px) and (max-width: 991px) {
+    #logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
 
-@media (min-width: 992px) and (max-width: 1199px) {}
+    .mobileNotification {
+        display: block;
+    }
+
+    .logo-img {
+
+        max-width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .information-wrap {
+        display: none;
+        position: relative;
+    }
+
+    .scroll-down {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        bottom: 50px;
+        z-index: 900;
+        animation: scroll_down 0.5s linear alternate infinite;
+    }
+
+    .wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .about-myfaceimg {
+        width: 30rem;
+        height: 30rem;
+        border-radius: 15%;
+        overflow: hidden;
+        border: none;
+    }
+
+    .about-myfaceimg .myimg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+    }
+
+    .about-sklis {
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+
+    .about-sklis .hashtag {
+        font-size: 1.6em;
+        text-align: center;
+        color: #fe8c13;
+        font-family: 'JalnanGothic';
+
+    }
+
+    .ab-p {
+        color: #525252;
+        font-size: 1.3em;
+    }
+
+    .ab-company {
+        line-height: 0;
+        padding: 4px 0;
+        word-break: keep-all;
+        font-size: 1.1em;
+    }
+
+    .wrap-po {
+        width: 85%;
+    }
+
+    .work-detail-wrap {
+        width: 600px;
+    }
+
+    #work .wrap-work-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #work {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .work-img {
+        border: 1px solid #999;
+        border-radius: 30px;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    #work .work-wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 70px;
+    }
+
+    #work .work-wrap .workdetail {
+        opacity: 1;
+        color: #d2d2d2;
+        font-size: 1.3rem;
+        font-weight: 400;
+        line-height: 1rem;
+    }
+
+
+    #work .work-wrap .workname {
+        font-size: 3.4rem;
+        font-weight: 800;
+        line-height: 0;
+        word-break: keep-all;
+    }
+
+    .work-lang {
+        display: inline-block;
+        margin: 1rem 0 1rem;
+    }
+
+    .work-lang-name {
+        color: #d2d2d2;
+        font-size: 1.3rem;
+        font-weight: 400;
+
+    }
+
+    #work-lang-before::before {
+        background-color: #d2d2d2;
+        content: "";
+        display: inline-block;
+        height: 15px;
+        margin-right: 10px;
+        transform: skew(-15deg, -15deg);
+        vertical-align: middle;
+        width: 1px;
+    }
+
+    .work-detail {
+        word-wrap: break-word;
+        color: #4e4e4e;
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 180%;
+        word-break: keep-all;
+    }
+
+    .work-link {
+        cursor: pointer;
+    }
+
+    .work-link .icons {
+        margin-right: 10px;
+    }
+
+    .footer-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        text-align: left;
+        margin: 0 auto;
+        max-width: 900px;
+        height: 100vh;
+        padding: 20px;
+    }
+
+    .footer-cont {
+        display: inline;
+        box-shadow: inset 0 -100px 0 #fe8c13;
+        font-size: 2.5rem;
+        color: #fff;
+        font-weight: 600;
+    }
+
+    .footer-lorem {
+        font-size: 2.3rem;
+    }
+
+    .footer-email {
+        font-size: 4.5rem;
+        line-height: 0;
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+
+    .footer-link {
+        font-size: 2rem;
+        position: relative;
+        margin-left: 50px;
+        display: inline-block;
+    }
+
+    .footer-link::after {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        background-color: #000;
+        transition: width 0.3s ease, left 0.3s ease;
+    }
+
+    .footer-link:hover::after {
+        width: 100%;
+        left: 0;
+        /* 링크 텍스트 왼쪽 정렬 */
+    }
+
+    #arrow {
+        position: absolute;
+        top: 9px;
+        left: -50px;
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    #logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .mobileNotification {
+        display: block;
+    }
+
+    .logo-img {
+        max-width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .information-wrap {
+        display: none;
+        position: relative;
+    }
+
+    .scroll-down {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        bottom: 50px;
+        z-index: 900;
+        animation: scroll_down 0.5s linear alternate infinite;
+    }
+
+    .wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .about-myfaceimg {
+        width: 30rem;
+        height: 30rem;
+        border-radius: 15%;
+        overflow: hidden;
+        border: none;
+    }
+
+    .about-myfaceimg .myimg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+    }
+
+    .about-sklis {
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+
+    .about-sklis .hashtag {
+        font-size: 1.2em;
+        text-align: center;
+        color: #fe8c13;
+        font-family: 'JalnanGothic';
+
+    }
+
+    .ab-p {
+        color: #525252;
+        font-size: 1.3em;
+    }
+
+    .ab-company {
+        line-height: 0;
+        padding: 4px 0;
+        word-break: keep-all;
+        font-size: 1.1em;
+    }
+
+    .wrap-po {
+        width: 85%;
+    }
+
+    .work-detail-wrap {
+        width: 600px;
+    }
+
+    #work .wrap-work-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #work {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .work-img {
+        border: 1px solid #999;
+        border-radius: 30px;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    #work .work-wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 70px;
+    }
+
+    #work .work-wrap .workdetail {
+        opacity: 1;
+        color: #d2d2d2;
+        font-size: 1.3rem;
+        font-weight: 400;
+        line-height: 1rem;
+    }
+
+
+    #work .work-wrap .workname {
+        font-size: 2.4rem;
+        font-weight: 800;
+        line-height: 0;
+        word-break: keep-all;
+    }
+
+    .work-lang {
+        display: inline-block;
+        margin: 1rem 0 1rem;
+    }
+
+    .work-lang-name {
+        color: #d2d2d2;
+        font-size: 1.3rem;
+        font-weight: 400;
+
+    }
+
+    #work-lang-before::before {
+        background-color: #d2d2d2;
+        content: "";
+        display: inline-block;
+        height: 15px;
+        margin-right: 10px;
+        transform: skew(-15deg, -15deg);
+        vertical-align: middle;
+        width: 1px;
+    }
+
+    .work-detail {
+        word-wrap: break-word;
+        color: #4e4e4e;
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 180%;
+        word-break: keep-all;
+    }
+
+    .work-link {
+        cursor: pointer;
+    }
+
+    .work-link .icons {
+        margin-right: 10px;
+    }
+}
 
 /* 컴퓨터  */
 @media (min-width: 1200px) {
@@ -434,7 +913,65 @@ a:link {
         width: 500px;
     }
 
+    .footer-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        text-align: left;
+        margin: 0 auto;
+        max-width: 900px;
+        height: 100vh;
+    }
 
+    .footer-cont {
+        display: inline;
+        box-shadow: inset 0 -100px 0 #fe8c13;
+        font-size: 2.5rem;
+        color: #fff;
+        font-weight: 600;
+    }
+
+    .footer-lorem {
+        font-size: 1.5rem;
+    }
+
+    .footer-email {
+        font-size: 6.5rem;
+        line-height: 0;
+        margin-top: 30px;
+        margin-bottom: 70px;
+    }
+
+    .footer-link {
+        font-size: 2rem;
+        position: relative;
+        margin-left: 40px;
+        display: inline-block;
+    }
+
+    .footer-link::after {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        background-color: #000;
+        transition: width 0.3s ease, left 0.3s ease;
+    }
+
+    .footer-link:hover::after {
+        width: 100%;
+        left: 0;
+        /* 링크 텍스트 왼쪽 정렬 */
+    }
+
+    #arrow {
+        position: absolute;
+        top: 9px;
+        left: -40px;
+    }
 }
 
 
@@ -574,79 +1111,4 @@ body {
 .reveal3.active {
     transform: translateY(0);
     opacity: 1;
-}
-
-
-
-.footer-wrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    line-height: 30px;
-}
-
-.footer-wrap .footer-lorem {
-    font-size: 4rem;
-    font-weight: 600;
-    display: inline;
-    box-shadow: inset 0 -116px 0 #fe8c13;
-    color: #ffffff;
-
-}
-
-.footer-wrap .footer-lorem-wrap {
-    line-height: 0;
-    position: relative;
-}
-
-.footer-wrap .footer-lorem2 {
-    position: absolute;
-    bottom: 50px;
-    left: 9px;
-    font-size: 2rem;
-    line-height: 0;
-}
-
-.footer-wrap .footer-email {
-    font-size: 8rem;
-    font-weight: 600;
-
-}
-
-.footer-wrap .footer-lorem3 {
-    font-size: 2rem;
-    position: absolute;
-    top: 90px;
-    left: 9px;
-    font-size: 2rem;
-    line-height: 0;
-}
-
-.footer-lorem3 .footer-link {
-    position: relative;
-    margin-left: 290px;
-}
-
-.footer-lorem3 .footer-link::after {
-    content: "";
-    position: absolute;
-    bottom: -3px;
-    /* 텍스트 아래에 밑줄 생성 */
-    left: 0;
-    width: 0;
-    height: 3px;
-    background-color: #000;
-    transition: width 0.3s ease;
-}
-
-.footer-lorem3 .footer-link:hover::after {
-    width: 100%;
-}
-
-
-#arrow {
-    position: absolute;
-    top: 10px;
-    right: 155px;
 }

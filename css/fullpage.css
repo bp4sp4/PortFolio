@@ -77,12 +77,6 @@ html.fp-enabled,
     transform: translate3d(0, 0, 0);
 }
 
-@media (max-width: 767px) {
-    #fp-nav {
-        display: none;
-    }
-}
-
 .fp-prev {
     left: 15px;
 }
