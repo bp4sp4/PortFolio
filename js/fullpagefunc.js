@@ -13,11 +13,11 @@ var myFullpage = new fullpage("#fullpage", {
     if (destination.index > 0) {
       $("#information").find(".information-wrap").css("color", "#000000");
       $("#information").css("border-top", "2.5px solid #000000");
-      $("#information").css("border-bottom", "1px solid #000000");
+      $("#information").css("border-bottom", "2.5px solid #000000");
     } else {
       $("#information").find(".information-wrap").css("color", "#ffffff");
       $("#information").css("border-top", "2.5px solid #ffffff");
-      $("#information").css("border-bottom", "1px solid #ffffff");
+      $("#information").css("border-bottom", "2.5px solid #ffffff");
     }
   },
 });
