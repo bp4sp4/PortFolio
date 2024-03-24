@@ -1,5 +1,4 @@
 var myFullpage = new fullpage("#fullpage", {
-  anchors: ["div1", "div2", "div3", "div4", "div5", "div6"],
   navigation: true,
   showActiveTooltip: true,
   menu: "#menu",

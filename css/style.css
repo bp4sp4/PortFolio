@@ -20,22 +20,25 @@
     font-family: 'seolleimcool-SemiBold';
 }
 
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #000
+}
+
+a:link {
+    color: #000;
+}
+
+.section:nth-child(1) {
+    background-color: #000;
+}
+
 /* 모바일 */
 
-.mobileNotification {
-    display: none;
-    position: relative;
-    top: 0px;
-    left: 0;
-    width: 100%;
-    border-top: 1px solid #fff;
-    color: #fff;
-    text-align: center;
-    font-size: 13px;
-    z-index: 999;
-    padding: 20px;
-    margin-top: 20px;
-}
+
 
 @keyframes scroll_down {
     0% {
@@ -45,10 +48,6 @@
     100% {
         transform: translateY(-10px)
     }
-}
-
-.section:nth-child(1) {
-    background-color: #000;
 }
 
 /* 아래에서 위로  */

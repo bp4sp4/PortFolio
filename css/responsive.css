@@ -1,4 +1,21 @@
+.mobileNotification {
+    display: none;
+    position: relative;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    border-top: 1px solid #fff;
+    color: #fff;
+    text-align: center;
+    font-size: 13px;
+    z-index: 999;
+    padding: 20px;
+    margin-top: 20px;
+}
+
 /* 모바일  */
+
+
 @media (max-width: 767px) {
     #fullpage {
         height: 1000px !important;
