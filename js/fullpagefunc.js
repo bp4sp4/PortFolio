@@ -13,6 +13,7 @@ var myFullpage = new fullpage("#fullpage", {
     "PortFolio",
     "Contact",
   ],
+  showActiveTooltip: false,
   navigationPosition: "left",
   scrollBar: true,
   autoScrolling: true,
