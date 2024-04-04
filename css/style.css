@@ -88,3 +88,10 @@ a:link {
     transform: translateY(0);
     opacity: 1;
 }
+
+
+
+ul,
+li {
+    list-style: none;
+}
