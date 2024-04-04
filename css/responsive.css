@@ -203,11 +203,25 @@
     }
 
     .work-link {
-        cursor: pointer;
+        display: flex;
     }
 
     .work-link .icons {
         margin-right: 10px;
+    }
+
+    .work-link .icons a svg {
+        width: 28px;
+        height: 28px;
+    }
+
+    .taglist .tagitem {
+        border: 2px solid rgb(10, 205, 206);
+        border-radius: 10rem;
+        color: rgb(10, 205, 206);
+        padding: 0.1rem 0.3rem;
+        margin: 0 0.3rem 0 0.3rem;
+        font-size: 0.6rem;
     }
 
     .footer-wrap {
@@ -453,6 +467,7 @@
     }
 
     .work-link {
+        display: flex;
         cursor: pointer;
     }
 
@@ -967,6 +982,7 @@
     }
 
     .work-link {
+        display: flex;
         cursor: pointer;
     }
 
