@@ -5,6 +5,8 @@ var myFullpage = new fullpage("#fullpage", {
   navigationTooltips: [
     "Main",
     "About",
+    "Tmembership",
+    "테이블링",
     "WeddingLery",
     "MoviePlaza",
     "Kakao-Clone",
