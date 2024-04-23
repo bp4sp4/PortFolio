@@ -4,6 +4,11 @@
 
 데모 사이트 - <a href="https://bp4sp4.github.io/PortFolio/">PortFolio</a>
 
+<h2>24/04/24</h2>
+
+- QA 파트 추가
+- TC 링크 연결
+
 <h2>24/04/04</h2>
 
 - PortFolio 프로젝트 추가
