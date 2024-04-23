@@ -312,6 +312,20 @@
         font-family: 'Noto Sans KR', sans-serif;
     }
 
+    .work-link-btn {
+        background-color: #7079eb;
+        padding: 10px 18px;
+        border: 1px solid transparent;
+        border-radius: 100px;
+        text-align: center;
+        display: inline-block;
+        font-family: 'Noto Sans KR', sans-serif;
+        color: #ffffff !important;
+        font-size: 15px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
 
 }
 
@@ -580,6 +594,19 @@
         font-family: 'Noto Sans KR', sans-serif;
     }
 
+    .work-link-btn {
+        background-color: #7079eb;
+        padding: 21px 60px;
+        border: 1px solid transparent;
+        border-radius: 100px;
+        text-align: center;
+        display: inline-block;
+        font-family: 'Noto Sans KR', sans-serif;
+        color: #fff !important;
+        font-size: 20px;
+        font-weight: 500;
+        cursor: pointer;
+    }
 }
 
 /* 테블릿 세로 */
@@ -845,6 +872,20 @@
         font-weight: 400;
         line-height: 1rem;
         font-family: 'Noto Sans KR', sans-serif;
+    }
+
+    .work-link-btn {
+        background-color: #7079eb;
+        padding: 21px 60px;
+        border: 1px solid transparent;
+        border-radius: 100px;
+        text-align: center;
+        display: inline-block;
+        font-family: 'Noto Sans KR', sans-serif;
+        color: #fff !important;
+        font-size: 20px;
+        font-weight: 500;
+        cursor: pointer;
     }
 }
 
@@ -1154,7 +1195,7 @@
         text-align: center;
         display: inline-block;
         font-family: 'Noto Sans KR', sans-serif;
-        color: #fff;
+        color: #fff !important;
         font-size: 20px;
         font-weight: 500;
         cursor: pointer;
