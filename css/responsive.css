@@ -506,7 +506,7 @@
 
     .work-link {
         display: flex;
-        cursor: pointer;
+
     }
 
     .work-link .icons {
@@ -786,7 +786,7 @@
     }
 
     .work-link {
-        cursor: pointer;
+        display: flex;
     }
 
     .work-link .icons {
@@ -1089,7 +1089,6 @@
 
     .work-link {
         display: flex;
-        cursor: pointer;
     }
 
     .work-link .icons {
