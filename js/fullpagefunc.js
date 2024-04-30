@@ -3,12 +3,11 @@ var myFullpage = new fullpage("#fullpage", {
   showActiveTooltip: true,
   menu: "#menu",
   navigationTooltips: [
-    "Main",
+    "Intro",
     "About",
     "Tmembership",
     "테이블링",
     "WeddingLery",
-    "MoviePlaza",
     "Kakao-Clone",
     "SkeletonUI",
     "LA-OpenAPI",

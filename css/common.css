@@ -1,0 +1,211 @@
+:root {
+    --main-color: #fff;
+
+}
+
+#wedding-bgc {
+    background: #000000d6;
+}
+
+.mobileNotification {
+    display: none;
+    position: relative;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    border-top: 1px solid #fff;
+    color: #fff;
+    text-align: center;
+    font-size: 13px;
+    z-index: 999;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.mobileNotification2 {
+    display: none;
+    position: relative;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    text-align: center;
+    font-size: 13px;
+    z-index: 999;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 767px) {
+    .information-wrap {
+        display: none;
+        position: relative;
+    }
+
+    .mobileNotification {
+        display: block;
+    }
+
+    .mobileNotification2 {
+        display: block;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #information {
+        position: relative;
+        width: 90%;
+        left: 5%;
+        top: 1rem;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        z-index: 9999;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #ffff;
+    }
+
+    .information-wrap {
+        color: #fff;
+        padding: 10px;
+        font-size: 20px;
+
+    }
+
+    #information .left {
+        position: absolute;
+        left: 0;
+    }
+
+    #information .center {
+        position: static;
+    }
+
+    #information .right {
+        position: absolute;
+        right: 0;
+    }
+
+    #information .right::before {
+        content: "";
+        display: block;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        left: -10px;
+        bottom: 20px;
+        color: rgb(173, 255, 148);
+        background-color: rgb(173, 255, 148);
+    }
+
+    .mobileNotification {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    #information {
+        position: relative;
+        width: 90%;
+        left: 5%;
+        top: 1rem;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        z-index: 9999;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #ffff;
+    }
+
+    .information-wrap {
+        color: #fff;
+        padding: 10px;
+        font-size: 20px;
+
+    }
+
+    #information .left {
+        position: absolute;
+        left: 0;
+    }
+
+    #information .center {
+        position: static;
+    }
+
+    #information .right {
+        position: absolute;
+        right: 0;
+    }
+
+    #information .right::before {
+        content: "";
+        display: block;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        left: -10px;
+        bottom: 20px;
+        color: rgb(173, 255, 148);
+        background-color: rgb(173, 255, 148);
+    }
+
+    .mobileNotification {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    #information {
+        position: relative;
+        width: 90%;
+        left: 5%;
+        top: 1rem;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        z-index: 9999;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #ffff;
+    }
+
+    .information-wrap {
+        color: #fff;
+        padding: 10px;
+        font-size: 20px;
+
+    }
+
+    #information .left {
+        position: absolute;
+        left: 0;
+    }
+
+    #information .center {
+        position: static;
+    }
+
+    #information .right {
+        position: absolute;
+        right: 0;
+    }
+
+    #information .right::before {
+        content: "";
+        display: block;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        left: -10px;
+        bottom: 20px;
+        color: rgb(173, 255, 148);
+        background-color: rgb(173, 255, 148);
+    }
+}
