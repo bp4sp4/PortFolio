@@ -524,6 +524,11 @@
         cursor: pointer;
     }
 
+    .popup__image2 {
+        max-width: 20rem;
+        height: 30rem;
+    }
+
 
 
 }
@@ -1037,6 +1042,10 @@
         transition: 0.5s ease-out;
     }
 
+    .popup__image2 {
+        max-width: 20rem;
+    }
+
 }
 
 /* 테블릿 세로 */
@@ -1545,6 +1554,10 @@
         transition: 0.5s ease-out;
     }
 
+    .popup__image2 {
+        max-width: 20rem;
+    }
+
 }
 
 /* 컴퓨터  */
@@ -1786,7 +1799,7 @@
         position: absolute;
         left: 12rem;
         width: 17.5rem;
-        height: 30.5rem;
+        height: 30.6rem;
     }
 
     .work-tc {
@@ -2056,4 +2069,7 @@
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     }
 
+    .popup__image2 {
+        max-width: 20rem;
+    }
 }
