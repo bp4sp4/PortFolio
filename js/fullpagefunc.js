@@ -11,6 +11,7 @@ var myFullpage = new fullpage("#fullpage", {
     "Kakao-Clone",
     "SkeletonUI",
     "LA-OpenAPI",
+    "GPT",
     "PortFolio",
     "Contact",
   ],

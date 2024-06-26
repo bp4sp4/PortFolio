@@ -1967,9 +1967,9 @@
     }
 
     .work__article .work__article__wrap .work__article_imgs {
-        width: 16rem;
+        width: 15rem;
         height: 14rem;
-        margin-right: 0.5rem;
+        margin-right: 1rem;
         border-radius: 0.6rem;
     }
 
