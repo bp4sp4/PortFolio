@@ -20,7 +20,7 @@ var myFullpage = new fullpage("#fullpage", {
   scrollBar: true,
   autoScrolling: true,
   slidesNavigation: true,
-  responsiveHeight: 330,
+  responsiveHeight: 1000,
   scrollingSpeed: 700,
   controlArrows: false,
   afterLoad: function (origin, destination, direction) {

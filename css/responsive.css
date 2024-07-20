@@ -85,7 +85,7 @@
     }
 
     .wrap-po {
-        width: 85%;
+        width: 75%;
     }
 
     .work-detail-wrap {
@@ -141,7 +141,7 @@
 
     .work-lang {
         display: inline-block;
-        margin: 1rem 0 1rem;
+        margin: 0.5rem 0 0.5rem;
     }
 
     .work-lang-name {
@@ -200,8 +200,7 @@
     .taglist {
         display: flex;
         flex-wrap: wrap;
-
-
+        margin-top: 0.5rem;
     }
 
     .taglist .tagitem {
@@ -399,7 +398,6 @@
         font-size: 0.9rem;
         font-family: 'Noto Sans KR', sans-serif;
         color: #fff;
-        margin-top: 1rem;
         font-weight: 400;
     }
 
