@@ -8,6 +8,8 @@ var myFullpage = new fullpage("#fullpage", {
     "Tmembership",
     "테이블링",
     "WeddingLery",
+    "Relux",
+    "HtmlStudy",
     "Kakao-Clone",
     "SkeletonUI",
     "LA-OpenAPI",
