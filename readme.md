@@ -1,8 +1,14 @@
 # PORTFOLIO
 
-# 23/07/25 제작 -> 24.03.18 수정 시작 -> 24.03.25(월)
+# 23/07/25 제작 -> 24.03.18 수정 시작 ~ ing
 
 데모 사이트 - <a href="https://bp4sp4.github.io/PortFolio/">PortFolio</a>
+
+<h2>24/11/08</h2>
+
+- WeddingLery 추가
+- Relux 추가
+- HtmlStudy 추가
 
 <h2>24/04/24</h2>
 
