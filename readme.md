@@ -4,6 +4,11 @@
 
 데모 사이트 - <a href="https://bp4sp4.github.io/PortFolio/">PortFolio</a>
 
+<h2>24/12/17</h2>
+
+- TM 미디어 추가
+- 말투 어색한거 업데이트
+
 <h2>24/11/08</h2>
 
 - WeddingLery 추가
