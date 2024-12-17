@@ -1696,6 +1696,7 @@
         transform: skew(-15deg, -15deg);
         vertical-align: middle;
         width: 1px;
+        margin-left: 5px;
     }
 
     .work-detail {

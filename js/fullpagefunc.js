@@ -10,6 +10,7 @@ var myFullpage = new fullpage("#fullpage", {
     "WeddingLery",
     "Relux",
     "HtmlStudy",
+    "TM media",
     "Kakao-Clone",
     "SkeletonUI",
     "LA-OpenAPI",
@@ -23,6 +24,7 @@ var myFullpage = new fullpage("#fullpage", {
   autoScrolling: true,
   slidesNavigation: true,
   responsiveHeight: 330,
+  responsiveWidth: 768,
   scrollingSpeed: 700,
   controlArrows: false,
   afterLoad: function (origin, destination, direction) {
