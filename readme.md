@@ -4,6 +4,10 @@
 
 데모 사이트 - <a href="https://bp4sp4.github.io/PortFolio/">PortFolio</a>
 
+<h2>24/12/29</h2>
+
+- 프로젝트 뭔가 더 어필할꺼 추가하기 생각
+
 <h2>24/12/17</h2>
 
 - TM 미디어 추가
