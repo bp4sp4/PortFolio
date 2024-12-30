@@ -468,7 +468,7 @@
 
     .work__article .work__article__wrap .work__article__descsection .work__article__desc__info .work__article__infolist .work__article__infolist__link {
         display: inline-block;
-        width: 5rem;
+
         color: var(--main-color);
         transition: text-decoration 0.3s ease;
     }
@@ -972,13 +972,13 @@
 
     .work__article .work__article__wrap .work__article__descsection .work__article__desc__info .work__article__infolist span {
         display: inline-block;
-        width: 5rem;
+        width: 7em;
         color: #66ff44;
     }
 
     .work__article .work__article__wrap .work__article__descsection .work__article__desc__info .work__article__infolist .work__article__infolist__link {
         display: inline-block;
-        width: 5rem;
+
         color: var(--main-color);
         transition: text-decoration 0.3s ease;
     }
@@ -2028,7 +2028,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 15rem;
+        height: 12rem;
         color: white;
         background-color: #464646;
         flex-direction: column;
