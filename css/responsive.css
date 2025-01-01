@@ -123,9 +123,9 @@
 
     #work .work-wrap .workdetail {
         opacity: 1;
-        color: #a5a5a5;
+        color: #c6c6c6;
         font-size: 0.9rem;
-        font-weight: 400;
+        font-weight: 500;
         line-height: 1rem;
         font-family: 'Noto Sans KR', sans-serif;
     }
@@ -145,14 +145,14 @@
     }
 
     .work-lang-name {
-        color: #a5a5a5;
+        color: #c6c6c6;
         font-size: 0.8rem;
-        font-weight: 400;
+        font-weight: 500;
         font-family: 'Noto Sans KR', sans-serif;
     }
 
     #work-lang-before::before {
-        background-color: #a5a5a5;
+        background-color: #c6c6c6;
         content: "";
         display: inline-block;
         height: 15px;
@@ -281,8 +281,8 @@
     }
 
     .work-tc {
-        color: #a5a5a5;
-        font-size: 0.4rem;
+        color: #c6c6c6;
+        font-size: 0.6rem;
         font-weight: 400;
         line-height: 1rem;
         font-family: 'Noto Sans KR', sans-serif;
@@ -648,9 +648,9 @@
 
     #work .work-wrap .workdetail {
         opacity: 1;
-        color: #a5a5a5;
+        color: #c6c6c6;
         font-size: 1.3rem;
-        font-weight: 400;
+        font-weight: 500;
         line-height: 1rem;
         font-family: 'Noto Sans KR', sans-serif;
     }
@@ -684,14 +684,14 @@
     }
 
     .work-lang-name {
-        color: #a5a5a5;
+        color: #c6c6c6;
         font-size: 1.3rem;
-        font-weight: 400;
+        font-weight: 500;
         font-family: 'Noto Sans KR', sans-serif;
     }
 
     #work-lang-before::before {
-        background-color: #a5a5a5;
+        background-color: #c6c6c6;
         content: "";
         display: inline-block;
         height: 15px;
@@ -805,7 +805,7 @@
     }
 
     .work-tc {
-        color: #a5a5a5;
+        color: #c6c6c6;
         font-size: 1rem;
         font-weight: 400;
         line-height: 1rem;
@@ -1659,9 +1659,9 @@
 
     #work .work-wrap .workdetail {
         opacity: 1;
-        color: #a5a5a5;
+        color: #c6c6c6;
         font-size: 1.5rem;
-        font-weight: 400;
+        font-weight: 500;
         line-height: 1rem;
         font-family: 'Noto Sans KR', sans-serif;
     }
@@ -1680,22 +1680,22 @@
     }
 
     .work-lang-name {
-        color: #a5a5a5;
+        color: #c6c6c6;
         font-size: 1.5rem;
-        font-weight: 400;
+        font-weight: 500;
         font-family: 'Noto Sans KR', sans-serif;
 
     }
 
     #work-lang-before::before {
-        background-color: #a5a5a5;
+        background-color: #c6c6c6;
         content: "";
         display: inline-block;
         height: 15px;
         margin-right: 10px;
         transform: skew(-15deg, -15deg);
         vertical-align: middle;
-        width: 1px;
+        width: 3px;
         margin-left: 5px;
     }
 
@@ -1802,7 +1802,7 @@
     }
 
     .work-tc {
-        color: #a5a5a5;
+        color: #c6c6c6;
         font-size: 1rem;
         font-weight: 400;
         line-height: 1rem;
