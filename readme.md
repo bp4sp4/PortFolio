@@ -4,6 +4,13 @@
 
 데모 사이트 - <a href="https://bp4sp4.github.io/PortFolio/">PortFolio</a>
 
+<h2>25/01/02</h2>
+
+- 사용한 언어나 워크프레임 눈에 띄는 색으로 변경
+- font-weight 변경
+- 모바일, 웹, 태블릿 다 반영
+- tc쪽도 수정
+
 <h2>24/12/30</h2>
 
 - 프로젝트 리뉴얼
