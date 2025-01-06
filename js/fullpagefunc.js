@@ -11,6 +11,7 @@ var myFullpage = new fullpage("#fullpage", {
     "Relux",
     "HtmlStudy",
     "TM media",
+    "grid",
     "Kakao-Clone",
     "SkeletonUI",
     "LA-OpenAPI",
