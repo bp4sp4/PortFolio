@@ -2,7 +2,7 @@
 
 # 23/07/25 제작 -> 24.03.18 수정 시작 ~ ing
 
-데모 사이트 - <a href="https://bp4sp4.github.io/PortFolio/">PortFolio</a>
+ PORTFOLIO_VER2 레포지토리 -> <a href="https://github.com/bp4sp4/portfolio_ver2/">PortFolio__VER2</a>
 
 <h2>25/01/06</h2>
 
